@@ -1,0 +1,62 @@
+\documentclass{article}
+
+\usepackage{graphicx} 
+\usepackage{ragged2e}
+
+\title{\textbf{National Institute of Technology, Srinagar}\\
+    \vfill
+    \includegraphics[width=4cm]{nitlogo.jpg}
+    \vfill
+Image Mining through Haar Cascades using OpenCV\vspace*{2.0cm}}
+\date{22-11-1016}
+\author{
+  Aiman Farooq
+  \and
+  Asif Iqbal
+}
+
+\setlength{\columnsep}{1cm}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\maketitle
+\newpage
+\pagenumbering{arabic}
+
+\tableofcontents
+\newpage
+
+%\twocolumn
+
+\section{Problem Statement}
+
+
+Humans recognise multiple objects in images or videos effortlessly and instantaneously, despite the fact that the image of the object may differ somewhat indifferent viewpoints, in many different sizes and scales or even when they are rotated or translated. Humans can recognize an object even if its partially visible.  In addition to object recognition by looking at videos/images humans can detect suspicious behaviour of other humans, which is highly useful in security and surveillance operations. However, performing all these tasks using a machine is very difficult and doesn’t yield accurate results. \\
+
+The object recognition problem can be defined as a labelling problem based on models of known objects. Given an image/video containing multiple objects of interest (and background) the task is to identify and label the objects correctly. Some object recognition techniques used are appearance based methods, which uses images (called templates or exemplars) of the object to perform recognition, Feature -based method where a search is used to find feasible matches between object features and image features. But these techniques yield very poor results. The most accurate method is using Genetic algorithms which develop recognition procedures without human intervention. Thus, there is a growing need for improving the object recognition technique which can be done using Haar Cascades using OpenCV \cite{ID:1}.
+
+\section{Methodology}
+
+Our project aims at designing a system which identifies objects in a n image /video through Haar cascades using OpenCV. It is a machine learning based approach where a cascade function is trained from a lot of positive (images where the relevant object is present) and negative images (images where the relevant object is absent). OpenCV provides a platform for the training of the system and the detection of the objects. The training of the system results in the output of the result file. The incoming data (images/video) is then compared against the result file which then detects the presence/absence of the object. The better the training of the system higher will be the accuracy of the system.! 
+
+\subsection{System Architecture}
+
+\begin{itemize}
+  \item Raspberry Pi 3 Version B.
+  \item USB Camera Equipment.
+  \item Cloud Space/ VPS.
+  \item Debian Jessie, testing under Raspbian, Linux Mint and Ubuntu.
+  \item API programmable image dataset urls.
+\end{itemize}
+
+\section{Outcome}
+
+Our project aims at identification of specific objects in images/videos with increased accuracy. The applications of which can be used in video surveillance techniques, improving search and rescue systems used during natural disasters.
+
+\newpage
+
+\bibliography{citations} 
+\bibliographystyle{ieeetr} 
+
+\end{document}
